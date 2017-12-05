@@ -19,7 +19,6 @@ class AltezzaAsset extends AssetBundle{
 		$this->css = [
 			'css/jquery.bxslider.css',
 			'css/style.css',
-			//'css/site.css',
 		];
 
 		$this->js = [

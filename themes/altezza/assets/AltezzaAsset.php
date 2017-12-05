@@ -23,8 +23,7 @@ class AltezzaAsset extends AssetBundle{
 		];
 
 		$this->js = [
-			'js/jquery.bxslider'.$min.'.js',
-			'js/script.js',
+			'js/jquery.bxslider'.$min.'.js',			
 			[
 				'https://code.jquery.com/jquery-3.2.1.slim.min.js',
 				'integrity' => 'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN',
@@ -35,6 +34,7 @@ class AltezzaAsset extends AssetBundle{
 				'integrity' => 'sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh',
 				'crossorigin' => 'anonymous',
 			],
+			'js/script.js',
 		];
 
 		// Подключаем свои файлы Bootstrap
@@ -45,9 +45,11 @@ class AltezzaAsset extends AssetBundle{
         Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
             'sourcePath' => $this->sourcePath,
             'js' => [
-            	'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js',
-            	'integrity' => 'sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ',
-            	'crossorigin' => 'anonymous',
+            	[
+            		'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js',
+            		'integrity' => 'sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ',
+            		'crossorigin' => 'anonymous',
+            	],
             ],
         ];
 	}	

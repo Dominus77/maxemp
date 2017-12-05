@@ -174,16 +174,6 @@ AltezzaAsset::register($this);
 	</div>
 </section>
 
-<script>
-    $(document).ready(function(){
-        $('.slider').bxSlider({
-            auto: true,
-            autoHover: true,
-            captions: true
-        });
-    });
-</script>
-
 <?php $this->endBody() ?>
 </body>
 </html>

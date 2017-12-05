@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+  </head>
+  <body>
+    <div class="container" id="container">
+    <section id="header">
+        <div class="row">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 logo">
+            <a href="#" class="img-fluid"><img src="img/logo.png"></a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 numbers">
+            <p id="number">+7 (812) <span>645</span>-70-95</p>
+            <p id="number">+7 (812) <span>946</span>-26-70</p>
+            <p id="worktime"><img src="img/call-center.png">с 9:00 до 22:00 без выходных</p>
+            <p id="worktime"><img src="img/ofis.png">с 11:00 до 20:00 без выходных</p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3 director d-none d-md-block d-lg-block d-xl-block">
+            <p>Нет возможности позвонить?</p>
+            <button class="btn btn-outline-success">
+              МЫ ВАМ ПЕРЕЗВОНИМ
+            </button>
+            <p id="writetodir"><img src="img/director.png"><a href="#">НАПИСАТЬ ДИРЕКТОРУ</a></p>
+          </div>
+          <div class="col-lg-3 col-xl-3 submenu_h  d-none d-lg-block d-xl-block">
+            <p><a href="#">Офисы продаж</a></p>
+            <p><a href="#">Сотрудничайте с нами</a></p>
+            <p><a href="#">Производители и страны</a></p>
+          </div>
+        </div>
+
+        <div class="row" id="header_menu">
+          <nav>
+            <ul class="topmenu">
+              <li><a href="">Главная</a>
+                <ul class="submenu">
+                  <li><a href="">Полезная информация</a></li>
+                </ul>
+              </li>
+              <li><a href="">Потолки</a>
+                <ul class="submenu">
+                  <li><a href="">Матовые натяжные потолки</a></li>
+                  <li><a href="">Сатиновые натяжные потолки</a></li>
+                  <li><a href="">Глянцевые натяжные потолки</a></li>
+                  <li><a href="">Тканевые натяжные потолки</a></li>
+                  <li><a href="">Многоуровневые натяжные потолки</a></li>
+                  <li><a href="">Звёздное небо</a></li>
+                  <li><a href="">Стильные натяжные потолки</a></li>
+                  <li><a href="">Калькулятор</a></li>
+                  <li><a href="">Потолки с фотопечатью</a></li>
+                </ul>
+              </li>
+              <li><a href="">Монтаж потолков</a>
+                <ul class="submenu">
+                  <li><a href="">Монтаж тканевых потолков</a></li>
+                  <li><a href="">Монтаж двухуровневых потолков</a></li>
+                  <li><a href="">Установка многоуровневых натяжных потолков</a></li>
+                </ul>
+              </li>
+              <li><a href="">Отзывы</a></li>
+              <li><a href="">Освещение</a></li>
+              <li><a href="">Акции и скидки</a></li>
+              <li><a href="">Другие услуги</a></li>
+              <li><a href="">Калькулятор</a></li>
+              <li><a href="">Наши работы</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="row" id="header_slider">
+          <div class="slider">
+            <div id="slides"><img src="img/slide1.jpg"></div>
+            <div id="slides"><img src="img/slide2.jpg"><span id="slidetext">
+              <p id="slidetext1">Осенний ценопад скидка 50%</p>
+              <p id="slidetext2">на бельгийский бесшовный потолок от студии Altezza</p>
+            </span>
+            </div>
+            <div id="slides"><img src="img/slide3.jpg">
+            <span id="slideText">
+              <p id="slidetext1">Скидка 20%</p>
+              <p id="slidetext2">ветеранам, пенсионерам и новосёлам</p>
+            </span></div>
+            <div id="slides"><img src="img/slide4.jpg"><span id="slideText">
+              <p id="slidetext1">Каждый пятый метр бесплатно!</p>
+              <p id="slidetext2">Супер акция на потолки с фотопечатью</p>
+            </span></div>
+            <div id="slides"><img src="img/slide5.jpg"><span id="slideText">
+              <p id="slidetext1">Осенние скидки 20%</p>
+              <p id="slidetext2">на тканевые потолки</p>
+            </span></div>
+            <div id="slides"><img src="img/slide6.jpg"><span id="slideText">
+              <p id="slidetext1">Идеальная чистота ваших потолков</p>
+              <p id="slidetext2">Моющее средство для натяжных потолков бесплатно каждому клиенту</p>
+            </span></div>
+          </div>
+        </div>
+    </section>
+    <section id="content">
+          <div class="row">
+            <div class="col-sm-3 sidebar">
+              <div class="row zamers">
+                <p id="callzamer">Вызов замерщика</p>
+                <p id="free">Бесплатно</p>
+              </div>
+              <div class="row sidemenu text-center">
+                <div class="col-sm-12 text-center" style="padding-bottom: 10px; padding-top: 10px; font-size: 16px; font-weight: bold; color: #5c5c5c;">
+                  Виды натяжных потолков
+                </div>
+                <ul>
+                  <li><a href="">Матовые потолки</a></li>
+                  <li><a href="">Сатиновые потолки</a></li>
+                  <li><a href="">Глянцевые потолки</a></li>
+                  <li><a href="">Тканевые потолки</a></li>
+                  <li><a href="">Арт-потолки</a></li>
+                  <li><a href="">Многоуровневые потолки</a></li>
+                  <li><a href="">Звёздное небо</a></li>
+                  <li><a href="">Стильные потолки</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-12  let15">
+                <img id="let15" src="img/15let.jpg">
+              </div>
+              <div class="col-sm-12 calculator">
+                <a href="#"><img id="calc" src="img/calc_icon.png"></a>
+                <p>КАЛЬКУЛЯТОР СТОИМОСТИ</p>
+              </div>
+              <div class="col-sm-12 fotopechat">
+                <a href="#"><img id="fotopechat" src="img/fotopechat.JPG"></a>
+                <p>Приложение для подбора фотопечати на потолках</p>
+              </div>
+              <div class="col-sm-12 design">
+                <a href="#"><img id="design" src="img/design.jpg"></a>
+                <p>Приложение для подбора дизайна потолков и комнаты</p>
+              </div>
+            </div>
+            <div class="col-sm-9 maincontent text-center">
+              <h1>Натяжные потолки в Санкт - Петербурге</h1>
+                <div class="row floor">
+                  <div class="col-sm-3"><a href="#"><img src="img/matovye.png" alt=""></a>
+                    <p id="floortext"><a href="#">Матовые</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/glyancevye.png" alt=""></a>
+                    <p id="floortext"><a href="">Глянцевые</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/satinovye.png" alt=""></a>
+                    <p id="floortext"><a href="">Сатиновые</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/s-fotopechatu.png" alt=""></a>
+                    <p id="floortext"><a href="">С фотопечатью</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 899р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/tkanevye.png" alt=""></a>
+                    <p id="floortext"><a href="#">Тканевые</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/mnogourovnevye.png" alt=""></a>
+                    <p id="floortext"><a href="">Многоуровневые</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/zvezdnoe-nebo.png" alt=""></a>
+                    <p id="floortext"><a href="">Звёздное небо</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 199р./м.кв</p>
+                  </div>
+                  <div class="col-sm-3"><a href="#"><img src="img/drugie.png" alt=""></a>
+                    <p id="floortext"><a href="">Другие</a></p>
+                    <p id="floorprice"><img src="img/quote.png">от 899р./м.кв</p>
+                  </div>
+                </div>
+                <p id="about">Компания «Altezza» - это большой выбор натяжных потолков и сопутствующих осветительных приборов по доступным ценам.</p>
+                <p id="about2">Мы работаем уже более 10 лет на территории Санкт-Петербурга и Ленинградской области и осуществляем монтаж натяжных потолков в различных помещениях (от комнат, до крупных муниципальных объектов). Своим клиентам мы предлагаем полотна только лучших мировых производителей.</p>
+                <div class="podbor">
+
+                  <!-- СЮДА ПОДБОР ЦВЕТА -->
+
+                </div>
+                <h2 id="zagolovok">Европейские производители полотен</h2>
+                <div class="row country">
+                  <table>
+                    <tr>
+                      <td><a href="#"><img src="img/french.jpg"><p>Франция</p></a></td>
+                      <td><a href="#"><img src="img/Germany-flag.jpg"><p>Франция</p></a></td>
+                      <td><a href="#"><img src="img/italy.jpg"><p>Франция</p></a></td>
+                      <td><a href="#"><img src="img/holland.jpg"><p>Франция</p></a></td>
+                      <td><a href="#"><img src="img/Belgium.jpg"><p>Франция</p></a></td>
+                    </tr>
+                  </table>
+                </div>
+                <h2 id="zagolovok">Монтаж потолков</h2>
+                <div class="row montaj text-center">
+                  <div class="col-sm-3"><a href="#"><img id="montimg" src="img/apartments.png">Квартиры</a></div>
+                  <div class="col-sm-3"><a href="#"><img id="montimg" src="img/comunal.png">Комнаты в коммунальных квартирах</a></div>
+                  <div class="col-sm-3"><a href="#"><img id="montimg" src="img/cottege.png">Коттеджи, дачи</a></div>
+                  <div class="col-sm-3"><a href="#"><img id="montimg" src="img/office.png">Офисные помещения</a></div>
+                </div>
+                <div class="row montaj text-center">
+                  <div class="col-sm-4"><a href="#"><img id="montimg2" src="img/shops.png"><p>Торговые центры и павильоны</p></a></div>
+                  <div class="col-sm-4"><a href="#"><img id="montimg2" src="img/newhome.png"><p>Новостройки с отделкой</p></a></div>
+                  <div class="col-sm-4"><a href="#"><img id="montimg2" src="img/goverment.png"><p>Государственные организации</p></a></div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-sm-12">
+                    <h2 id="feat">Наши преимущества</h2>
+                  </div>
+                </div>
+                <div class="row ourfeatures text-center">
+                  <div class="col-sm-4"><img src="img/gar.png" alt="">
+                    <p>Гарантия</p>
+                      <div id="featline">
+                        Мы предоставляем полную гарантию на все виды материалов и работ – 15 лет.
+                      </div>
+                  </div>
+                  <div class="col-sm-4"><img src="img/opyt.png" alt="">
+                    <p>Опыт</p>
+                      <div id="featline">
+                        На рынке больше 10 лет
+                      </div>
+                  </div>
+                  <div class="col-sm-4"><img src="img/nad.png" alt="">
+                    <p>Качество</p>
+                      <div id="featline">
+                        Мы устанавливаем только настоящие потолки от европейских брендов
+                      </div>
+                  </div>
+                </div>
+                <div class="row whywe text-center">
+                  <div class="col-sm-6 whyprob">ПОЧЕМУ СТОИТ ЗАКАЗАТЬ НАТЯЖНОЙ ПОТОЛОК ИМЕННО У НАС:
+                  </div>
+                  <div class="col-sm-6 whyprob">
+                    ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ 95% КЛИЕНТОВ:
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ВЫСОКОЕ КАЧЕСТВО ПОТОЛКОВ</p>
+                    <p id="ourfeat2"><img src="img/kaches.png">Мы устанавливаем только настоящие потолки от европейских брендов, а для тех, кто хочет получить качественные потолки по минимальной цене, мы предлагаем установку натяжных потолков от проверенных брендов из Китая.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ПОТОЛКИ НИЗКОГО КАЧЕСТВА</p>
+                    <p id="ourfeat2"><img src="img/kaches_low.png">Часто дешевые китайские потолки продаются под видом именитых европейских марок. Такие потолки не только недолговечны и часто имеют неприятный запах, но и могут быть даже опасны для здоровья, выделяя в воздух опасные химикаты.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>РАБОТАЮТ ПРОФЕССИОНАЛЫ</p>
+                    <p id="ourfeat2"><img src="img/instr.png">Мы не экономим на сотрудниках. Все монтажники прошли необходимое обучение и имеют многолетний опыт работы</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ВНЕШТАТНЫЕ МОНТАЖНИКИ</p>
+                    <p id="ourfeat2"><img src="img/instr2.png">В погоне за дешевизной компании нанимают случайных мастеров-монтажников с низкой квалификацией или вовсе без опыта работы.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ЭКОНОМИМ ВАШЕ ВРЕМЯ</p>
+                    <p id="ourfeat2"><img src="img/zamer2.png">Наши замерщики компетентны во всех вопросах установки. Вы сразу узнаете стоимость ваших потолков и сможете заключить договор сразу после замера.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>НЕКВАЛИФИЦИРОВАННЫЕ ЗАМЕРЩИКИ</p>
+                    <p id="ourfeat2"><img src="img/zamer.png">Замерщик выполняет свою работу, но не может ответить на возникающие вопросы, назвать точную стоимость или заключить договор.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ГАРАНТИЯ - 15 ЛЕТ</p>
+                    <p id="ourfeat2"><img src="img/yes-garanty.png">Мы предоставляем полную гарантию на все виды материалов и работ – 15 лет. Без скрытых условий. Мы всегда выполняем гарантийные обязательства.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ОТСУТСТВИЕ ГАРАНТИИ</p>
+                    <p id="ourfeat2"><img src="img/no-garanty.png">Компания умалчивает о наличии гарантии, а при возникновении гарантийного случая не выполняют свои обязательства, ссылаясь на мнимые ошибки эксплуатации потолков или конструктивные дефекты квартиры или дома.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>РАБОТАЕМ ЧИСТО</p>
+                    <p id="ourfeat2"><img src="img/clean.png">Наши монтажники всегда работают аккуратно и убирают весь оставляемый в процессе работы мусор.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>МОНТАЖНИКИ ОСТАВЛЯЮТ МУСОР ПОСЛЕ РАБОТЫ</p>
+                    <p id="ourfeat2"><img src="img/musor.png">Выполнив установку потолков, монтажники оставляют весь строительный мусор как есть, оставляя уборку на плечи заказчика. В некоторых случаях недобросовестные монтажники могут даже повредить элементы отделки или мебель.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>СОБЛЮДАЕМ СРОКИ</p>
+                    <p id="ourfeat2"><img src="img/speed.png">Мы работаем быстро. Производство полотна занимает не более трех дней, а установка производится за один день, а в некоторых случаях даже пару часов.</p>
+                  </div>
+                  <div class="col-sm-6 whywe2">
+                    <p>ЗАТЯГИВАНИЕ СРОКОВ</p>
+                    <p id="ourfeat2"><img src="img/time.png">Производство полотна затягивается больше, чем на неделю, а монтаж производится в два этапа: сначала привозят материалы, а монтаж осуществляется на следующий день или даже через несколько дней.</p>
+                  </div>
+                  <div class="col-sm-12 callz text-center">
+                    <button id="callzam">
+                    Вызов замерщика БЕСПЛАТНО
+                    </button>
+                  </div>
+                </div>
+                <div class="row vkvidget">
+                  
+                </div>
+                <div class="row ourclients text-center">
+                  <div class="col-sm-12"><p>Наши клиенты</p></div>
+                  <div class="col-sm-3 clients"><img src="img/zsd.png"></div>
+                  <div class="col-sm-3 clients"><img src="img/school106.jpg"></div>
+                  <div class="col-sm-3 clients"><img id="client3" src="img/ob_stro.png"></div>
+                  <div class="col-sm-3 clients"><img src="img/katti.jpg"></div>
+                  <p id="company">В нашей компании вы можете заказать производство и монтаж потолка, как из ПВХ, так и из тканевых материалов. Сделайте правильный выбор - купите натяжной потолок в компании Altezza.</p>
+                </div>
+            </div>
+          </div>
+    </section>
+      <div class="line">  
+      </div>
+    </div>
+    <section id="footer">
+      <div class="container footer">
+        <div class="row text-center">
+          <div class="col-sm-3">
+            <p id="caption">Потолки</p>
+              <ul>
+                <li><a href="#">Матовые натяжные потолки</a></li>
+                <li><a href="#">Сатиновые натяжные потолки</a></li>
+                <li><a href="#">Глянцевые натяжные потолки</a></li>
+                <li><a href="#">Тканевые потолки</a></li>
+                <li><a href="#">Многоуровневые натяжные потолки</a></li>
+                <li><a href="#">Звёздное небо</a></li>
+                <li><a href="#">Стильные натяжные потолки</a></li>
+                <li><a href="#">Калькулятор</a></li>
+                <li><a href="#">Потолки с фотопечатью</a></li>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+            <p id="caption">Светильники</p>
+            <ul>
+                <li><a href="#">Светильники</a></li>
+                <li><a href="#">Лампочки</a></li>
+                <li><a href="#">Led - ленты</a></li>
+            </ul>
+          </div>
+          <div class="col-sm3-">
+            <p id="caption">Офис продаж</p>
+            <ul>
+                <li><a href="#" id="adress"><p>Санкт-Петербург</p>
+                <p>Московский проспект д.65 литер Б</p></a></li>
+              </ul>
+          </div>
+          <div class="col-sm-3 footlogo">
+            <img src="img/foot-logo.png">
+            <p>студия потолков © 2003</p>
+            <img src="img/phone.png">
+            <p id="numberfooter">(812) <span>645</span>-70-95</p>
+            <p id="worktimefoot">С 9:00 до 20:00 без выходных</p>
+          </div>
+          <div class="col-sm-12">
+            <p id="caption">Навигация</p>
+          </div>
+          <div class="col-sm-12 footmenu">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Натяжные потолки</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Полезная информация</a></li>
+            </ul>
+          </div>
+          <div class="row last">
+            Монтаж натяжных потолков в СПб и пригороде. Мы работаем в районах Ленинградской области: Всеволожск, Гатчина, Зеленогорск, Кронштадт, Петергоф, Пушкин, Колпино, Тельмана, Большая Ижора, Павловск, Репино, Красное село, Сертолово, Выборг, Бугры, Сестрорецк, Юкки, Лисий нос, Волхов, Петродворец, Ломоносов, Сосновый бор, Колтуши, Тосно, Кировск, Металлострой, Токсово, Шлиссельбург, Белоостров, Отрадное, Разметелево, Стрельна, Коммунар, Никольское, Ропша, Синявино, Волосово, Янино, Мга, Копорье, Вырица, Щеглово, Дубровка, Приладожский, Вартемяги, Поселок Морозова, Горбунки, Тайцы, Аннино, Горелово, Кисельня, Новосаратовка, Петро-Славянка, Поселок Свердлова, Русско-высоцкое, Сиверский, Фарносово.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/jquery.bxslider.js"></script>
+
+    <script>
+      $(document).ready(function(){
+      $('.slider').bxSlider({
+        auto: true,
+        autoHover: true,
+        captions: true,
+      });
+      });
+    </script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

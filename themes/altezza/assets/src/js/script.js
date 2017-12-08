@@ -1,6 +1,7 @@
-$(document).ready(function(){
-    "use strict";
 
+"use strict";
+
+$(document).ready(function () {
     $('.slider').bxSlider({
         auto: true,
         autoHover: true,

@@ -24,21 +24,25 @@ class AltezzaAsset extends AssetBundle
         $min = YII_ENV_DEV ? '' : '.min';
 
         $this->css = [
-            'css/jquery.bxslider.css',
+            'css/jquery.bxslider' . $min . '.css',
             'css/style.css',
             'css/site.css',
         ];
 
         $this->js = [
             'js/jquery.bxslider' . $min . '.js',
-            'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper' . $min . '.js',
+            '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper' . $min . '.js',
             'js/script.js',
         ];
 
         // Подключаем свои файлы Bootstrap
         Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
-            'sourcePath' => $this->sourcePath,
-            'css' => ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap' . $min . '.css'],
+            'css' => ['//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap' . $min . '.css'],
+        ];
+
+        // Подключаем свои файлы jQuery
+        Yii::$app->assetManager->bundles['yii\web\JqueryAsset'] = [
+            'js' => ['//code.jquery.com/jquery-3.2.1.slim' . $min . '.js'],
         ];
     }
 

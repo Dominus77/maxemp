@@ -31,13 +31,15 @@ class AltezzaAsset extends AssetBundle
 
         $this->js = [
             'js/jquery.bxslider' . $min . '.js',
-            '//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper' . $min . '.js',
             'js/script.js',
         ];
 
         // Подключаем свои файлы Bootstrap
         Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
             'css' => ['//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap' . $min . '.css'],
+        ];
+        Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapPluginAsset'] = [
+            'js' => ['//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap' . $min . '.js'],
         ];
 
         // Подключаем свои файлы jQuery
@@ -48,6 +50,7 @@ class AltezzaAsset extends AssetBundle
 
     public $depends = [
         'yii\web\JqueryAsset',
+        'app\themes\altezza\assets\PopperAsset',
         'yii\bootstrap\BootstrapPluginAsset',
     ];
 }

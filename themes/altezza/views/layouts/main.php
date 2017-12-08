@@ -3,7 +3,7 @@
 use app\themes\altezza\assets\AltezzaAsset;
 use yii\helpers\Html;
 
-AltezzaAsset::register($this);
+$bundle = AltezzaAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!doctype html>
@@ -14,11 +14,14 @@ AltezzaAsset::register($this);
 	<meta charset="<?= Yii::$app->charset?>">
     <?= Html::csrfMetaTags()?>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="<?= $bundle->baseUrl ?>/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="<?= $bundle->baseUrl ?>/favicon.ico" type="image/x-icon" />
     <?php $this->head() ?>
 </head>
 <body>
 <?php $this->beginBody() ?>
 <div class="container" id="container">
+
 	<section id="header">
 		<div class="row">
 			<div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3 logo">

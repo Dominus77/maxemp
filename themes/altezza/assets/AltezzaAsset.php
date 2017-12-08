@@ -5,38 +5,45 @@ namespace app\themes\altezza\assets;
 use Yii;
 use yii\web\AssetBundle;
 
-class AltezzaAsset extends AssetBundle{
+/**
+ * Class AltezzaAsset
+ * @package app\themes\altezza\assets
+ */
+class AltezzaAsset extends AssetBundle
+{
 
-	public $sourcePath = '@app/themes/altezza/assets/src';
+    public $sourcePath = '@app/themes/altezza/assets/src';
 
-	public $css;
-	public $js;
+    public $css;
+    public $js;
 
-	public function init()
-	{
-		parent::init();
-		$min = YII_ENV_DEV ? '' : '.min';
-		$this->css = [
-			'css/jquery.bxslider.css',
-			'css/style.css',
-			'css/site.css',
-		];
+    public function init()
+    {
+        parent::init();
 
-		$this->js = [
-			'js/jquery.bxslider'.$min.'.js',			
-			'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js',			
-			'js/script.js',
-		];
+        $min = YII_ENV_DEV ? '' : '.min';
 
-		// Подключаем свои файлы Bootstrap
-        Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
-                'sourcePath' => $this->sourcePath,
-                'css' => ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css'],
+        $this->css = [
+            'css/jquery.bxslider.css',
+            'css/style.css',
+            'css/site.css',
         ];
-	}	
 
-	public $depends = [
-		'yii\web\YiiAsset',
-		'yii\bootstrap\BootstrapPluginAsset',
-	];
+        $this->js = [
+            'js/jquery.bxslider' . $min . '.js',
+            'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper' . $min . '.js',
+            'js/script.js',
+        ];
+
+        // Подключаем свои файлы Bootstrap
+        Yii::$app->assetManager->bundles['yii\bootstrap\BootstrapAsset'] = [
+            'sourcePath' => $this->sourcePath,
+            'css' => ['https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap' . $min . '.css'],
+        ];
+    }
+
+    public $depends = [
+        'yii\web\JqueryAsset',
+        'yii\bootstrap\BootstrapPluginAsset',
+    ];
 }
